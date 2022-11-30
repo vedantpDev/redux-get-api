@@ -1,0 +1,45 @@
+Why we need to learn Redux ?
+=> We USe Redux for State Management.(Purpose Of the Redux) 
+=> (Prop Drilling) in React we pass data by the prop through the components to components.
+=> To solve this problem we use Redux.
+
+=> TO solve this problem we use "Redux Store".
+when we store the whole application state and we use data from this storage.
+
+=> Redux helps you manage "global" state - state that is needed across many parts of your application.
+
+==> What is Redux?
+=> Redux is Pattern and library  for managing and updating "application state"
+using events called "actions". it serves as a centralized store for state that
+need to be used across your entire application, with rules ensuring that the state can only be 
+updated in a predictable fashion.
+
+==> TODO: IMP Topics Of Redux
+1} Action => What to do ?
+=> Actions are plain Javascript objects that have a type field.
+=> Actions only tell what to do, but dont tell hoe to do.
+1.1} Action Creator
+=> Pure Function which creates an action. => Reusable, Portable, Easy to Test
+
+2} Reduser => How to do ?
+=> Reduser are function that take the "current state" and an "action" as arguments,
+and return a "new state" result.
+
+3} Store => Object which holds the state of the apllication.
+=> The Redux store brings together the "state", "actions" and "reducers" that make up your app.
+=> its important to note that you'll only have a "single store" in a Redux Appliction.
+=> Every Redux store has a "single root" reducer function.
+
+4} Function associated with Store => createStore() 
+                                    dispacth(action)
+
+ The only way to update the state is to call store.dispatch() and pass in an action object. 
+
+
+ TODO: This is a Accense of the Redux
+ Create a Store 
+ Declare the initial state and reduser
+ define actions and actions Creater
+ dispatch action to update 
+
+
